@@ -1,4 +1,39 @@
-.nav-bar{
-    background-color: black;
-    height: 50%;
+body {
+    font-family: Arial,sans-serif;
+    margin: 0;
+    display: flex;
+}
+nav {
+    height: 100vh;
+    width: 100px;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+
+nav a {
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: left;
+}
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+.content {
+    margin-left: 260px;
+    padding: 20px;
+    width: calc(100% - 260px);
 }
