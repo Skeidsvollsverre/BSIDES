@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+HEAD
 let slideIndex = 0;
 showSlides();
 
@@ -44,5 +44,5 @@ function showManualSlides(n) {
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
 }
-=======
+
 
