@@ -6,20 +6,16 @@ body {
     display: flex;
     background-color: #141218;
 }
+
 nav {
     height: 100vh;
     width: 20vh;
     background-color: #141218;
     position: fixed;
-    top: 20vh; /* Adjusted value */
+    top: 20vh;
     left: 10px;
     padding-top: 20px;
     border-radius: 7px;
-    transform: translateX(0); /* Ensure it is always visible */
-}
-
-.main-nav.active {
-    transform: translateX(0);
 }
 
 .main-nav a {
@@ -37,26 +33,43 @@ nav {
     transition: 1s;
 }
 
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-}
-
 .content {
-    margin-left: 0;
+    margin-left: 20vh; /* Account for the sidebar */
     padding: 20px;
-    width: 100%;
+    max-width: calc(100% - 20vh); /* Prevent content from overflowing */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 30vh;
+    flex-wrap: wrap;
+    box-sizing: border-box; /* Ensure padding and margin don't overflow */
 }
 
 h1 {
     color: white;
 }
 
+p {
+    color: white;
+    font-size: smaller;
+}
+
+.Tekst {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+.bilde img {
+    max-width: 100%; /* Prevents image from exceeding its container */
+    max-height: 60vh; /* Ensure image scales properly */
+    width: auto;
+    height: auto;
+}
+
+.bilde {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Make sure the image container doesn't overflow */
+    flex-wrap: wrap;
+}
