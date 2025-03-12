@@ -7,20 +7,38 @@
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
+   
+  <nav class="main-nav">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="content">
+    <h1>Bside</h1>
+    <div class="button">
+      <button class="scroll-button" type="button">Biletter</button>
+      <button class="scroll-button" type="button">Tiderligere events</button>
+      <button class="scroll-button" type="button">Hvor?</button>
+    </div>
+
     
-    <div class="agenda-container">
+
+      <div class="agenda-container">
         <h1>Agenda</h1>
         
         <div class="dropdown">
           <button class="dropbtn">Velg Agenda</button>
           <div class="dropdown-content">
-            <a href="#" class="agenda-item" onclick="showDetails('session1')">9:00 - 10:00: Introduksjon til Kunstig Intelligens</a>
-            <a href="#" class="agenda-item" onclick="showDetails('session2')">10:30 - 12:00: Blockchain Teknologi i Praksis</a>
-            <a href="#" class="agenda-item" onclick="showDetails('session3')">12:30 - 13:30: Cloud Computing og Fremtiden</a>
-            <a href="#" class="agenda-item" onclick="showDetails('session4')">14:00 - 15:30: Cybersecurity: Beskyttelse i en Digital Verden</a>
-          </div>
+            <div class="agenda-item" onclick="showDetails('session1')">9:00 - 10:00: Introduksjon til Kunstig Intelligens</div>
+            <div class="agenda-item" onclick="showDetails('session2')">10:30 - 12:00: Blockchain Teknologi i Praksis</div>
+            <div class="agenda-item" onclick="showDetails('session3')">12:30 - 13:30: Cloud Computing og Fremtiden</div>
+            <div class="agenda-item" onclick="showDetails('session4')">14:00 - 15:30: Cybersecurity: Beskyttelse i en Digital Verden</div>
+            <div class="agenda-item" onclick="showDetails('session5')">16:00 - 17:30: Cybersecurity: Beskyttelse i en Digital Verden</div>
         </div>
-    
+        
+        </div>
         <div id="session1" class="session-details">
           <h2>9:00 - 10:00: Introduksjon til Kunstig Intelligens</h2>
           <p><strong>Starttid:</strong> 09:00</p>
@@ -48,7 +66,14 @@
           <p><strong>Beskrivelse:</strong> Lær om viktigheten av cybersikkerhet og beste praksis for å beskytte data og nettverk.</p>
           <p><strong>Foredragsholder:</strong> Erik Olsen</p>
         </div>
-      </div>
+        <div id="session5" class="session-details">
+          <h2>16:00 - 17:30: Cybersecurity: Beskyttelse i en Digital Verden</h2>
+          <p><strong>Starttid:</strong> 14:00</p>
+          <p><strong>Beskrivelse:</strong> Lær om viktigheten av cybersikkerhet og beste praksis for å beskytte data og nettverk.</p>
+          <p><strong>Foredragsholder:</strong> Erik Olsen</p>
+        </div>
+  </div>
+   
 
 <script src="script.js"></script>
 </body>
