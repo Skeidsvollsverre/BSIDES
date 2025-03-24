@@ -30,7 +30,6 @@ nav {
 
 .content {
     margin-left: 20vh; /* Account for the sidebar */
-    padding: 20px;
     max-width: calc(100% - 20vh); /* Prevent content from overflowing */
     display: flex;
     flex-direction: column;
@@ -152,3 +151,20 @@ img {
     width: 100px;
     height: 400px;
 }
+
+#Conduct{
+    background-color: black;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    
+}
+
+#cd{
+    color: white;
+    font-size: x-large;
+}
+
