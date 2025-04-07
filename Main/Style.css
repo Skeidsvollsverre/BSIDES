@@ -189,3 +189,21 @@ img {
     width: 100px;
     height: 400px;
 }
+
+.settings-link {
+    margin-left: auto;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.settings-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.settings-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    vertical-align: middle;
+}
