@@ -35,7 +35,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function applySettings(settings) {
         // Apply theme
-        document.body.className = settings.theme;
+        if (settings.theme === 'light') {
+            document.body.classList.add('light-mode');
+            document.body.classList.remove('dark-mode');
+        } else {
+            document.body.classList.add('dark-mode');
+            document.body.classList.remove('light-mode');
+        }
         
         // Apply font size
         document.body.style.fontSize = settings.fontSize === 'small' ? '14px' : 

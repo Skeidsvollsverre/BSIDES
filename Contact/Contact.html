@@ -1,3 +1,27 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bside - Contact</title>
+    <link rel="stylesheet" href="Contact.css">
+    <script>
+        // Apply theme immediately when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedSettings = localStorage.getItem('bsidesSettings');
+            if (savedSettings) {
+                const settings = JSON.parse(savedSettings);
+                if (settings.theme === 'light') {
+                    document.body.classList.add('light-mode');
+                } else {
+                    document.body.classList.add('dark-mode');
+                }
+            } else {
+                // Default to dark mode if no settings are saved
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+</head>
+
 <nav class="main-nav">
     <div class="nav-links">
         <a href="../Main/index.html">Home</a>

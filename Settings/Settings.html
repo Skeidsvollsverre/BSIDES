@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bside - Settings</title>
     <link rel="stylesheet" href="/Settings/Settings.css">
+    <script>
+        // Apply theme immediately when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedSettings = localStorage.getItem('bsidesSettings');
+            if (savedSettings) {
+                const settings = JSON.parse(savedSettings);
+                if (settings.theme === 'light') {
+                    document.body.classList.add('light-mode');
+                } else {
+                    document.body.classList.add('dark-mode');
+                }
+            } else {
+                // Default to dark mode if no settings are saved
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
 </head>
 <body>
   <nav class="main-nav">
