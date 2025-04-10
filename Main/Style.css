@@ -95,6 +95,7 @@ p {
     height: auto;
     border-radius: 10px;
     transition: 1s;
+    text-decoration: none;
 }
 
 .scroll-button:hover {
