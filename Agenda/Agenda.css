@@ -196,4 +196,75 @@ h2 {
     color: #888;
     margin: 0;
     padding: 0 1rem;
+}
+
+/* Light Mode Styles */
+body.light-mode {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+body.light-mode .main-nav {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .nav-links a {
+    color: #333;
+}
+
+body.light-mode .nav-links a:hover {
+    color: #4a90e2;
+    background-color: #f0f0f0;
+}
+
+body.light-mode .logo {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .logo h1 {
+    color: #333;
+}
+
+body.light-mode #Agenda {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode #Agenda h1 {
+    color: #333;
+}
+
+body.light-mode .agenda-container {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .agenda-item {
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+}
+
+body.light-mode .agenda-header h2 {
+    color: #333;
+}
+
+body.light-mode .agenda-content h3 {
+    color: #333;
+}
+
+body.light-mode .agenda-content p {
+    color: #333;
+}
+
+body.light-mode .toggle {
+    color: #333;
+}
+
+body.light-mode h1, 
+body.light-mode h2, 
+body.light-mode h3, 
+body.light-mode p {
+    color: #333;
 } 

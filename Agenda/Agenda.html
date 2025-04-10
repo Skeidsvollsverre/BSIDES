@@ -3,8 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bside</title>
-    <link rel="stylesheet" href="/Agenda/Agenda.css">
+    <title>Bside - Agenda</title>
+    <link rel="stylesheet" href="Agenda.css">
+    <script>
+        // Apply theme immediately when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedSettings = localStorage.getItem('bsidesSettings');
+            if (savedSettings) {
+                const settings = JSON.parse(savedSettings);
+                if (settings.theme === 'light') {
+                    document.body.classList.add('light-mode');
+                } else {
+                    document.body.classList.add('dark-mode');
+                }
+            } else {
+                // Default to dark mode if no settings are saved
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
 </head>
 <body>
   <nav class="main-nav">
@@ -145,8 +162,7 @@
       <div class="footer-section">
         <h3>Adresse</h3>
         <p>BSides Oslo</p>
-        <p>Karl Johans gate 1</p>
-        <p>0154 Oslo</p>
+        <p>Vulkan 26, 0178 Oslo</p>
       </div>
       <div class="footer-section">
         <h3>Følg Oss</h3>
