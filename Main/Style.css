@@ -108,6 +108,7 @@ p {
     margin: auto;
     overflow: hidden; /* Ensure images don't overflow */
     margin-top:30px;
+    border-radius: 30px;
 }
 
 .slide-fade {
