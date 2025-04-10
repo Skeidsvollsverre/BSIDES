@@ -1,38 +1,47 @@
-<nav class="main-nav">
-    <div class="nav-links">
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bside - Kontakt</title>
+  <link rel="stylesheet" href="Contact.css" />
+</head>
+<body>
+  <div class="content">
+    <nav class="main-nav">
+      <div class="nav-links">
         <a href="../Main/index.html">Home</a>
         <a href="../Agenda/Agenda.html">Agenda</a>
-        <a href="Contact.html">Contact</a>
+        <a href="../Contact/Contact.html">Contact</a>
         <a href="../Code_of_conduct/Conduct.html">Conduct</a>
-    </div>
-    <a href="../Settings/Settings.html" class="settings-link">
-        <img src="/Main/png-clipart-settings-gear-icon-gear-configuration-thumbnail.png" alt="Settings" class="settings-icon">
-    </a>
-</nav>
+        <a href="../Settings/Settings.html">
+          <img src="/Main/png-clipart-settings-gear-icon-gear-configuration-thumbnail.png" alt="Innstillinger" class="settings-icon">
+        </a>
+      </div>
+    </nav>
 
-<footer class="main-footer">
-    <div class="footer-content">
-        <div class="footer-section">
-            <h3>Kontakt Oss</h3>
-            <p>Email: kontakt@bsides.no</p>
-            <p>Telefon: +47 123 45 678</p>
+    <main class="main-content">
+      <div class="Contact">
+        <div class="Header">
+          <h1>Kontakt oss</h1>
+          <p>Vi vil gjerne høre fra deg! Vennligst fyll ut skjemaet eller bruk kontaktinformasjonen nedenfor.</p>
         </div>
-        <div class="footer-section">
-            <h3>Adresse</h3>
-            <p>BSides Oslo</p>
-            <p>Karl Johans gate 1</p>
-            <p>0154 Oslo</p>
-        </div>
-        <div class="footer-section">
-            <h3>Følg Oss</h3>
-            <p>Twitter: @BSidesOslo</p>
-            <p>LinkedIn: BSides Oslo</p>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2024 BSides Oslo. Alle rettigheter reservert.</p>
-    </div>
-</footer>
 
+        <form class="contact-form">
+          <input type="text" name="name" placeholder="Ditt navn" required />
+          <input type="email" name="email" placeholder="Din e-post" required />
+          <textarea name="message" rows="5" placeholder="Din melding" required></textarea>
+          <button type="submit">Send melding</button>
+        </form>
+
+        <div class="contact-info">
+          <h2>Vår kontaktinformasjon</h2>
+          <p><strong>Adresse:</strong> Bsidegata 123, Teknobyen, 90210 Oslo</p>
+          <p><strong>Telefon:</strong> (+47) 123 45 678</p>
+          <p><strong>E-post:</strong> kontakt@bside.com</p>
+        </div>
+      </div>
+    </main>
+  </div>
 </body>
-</html> 
+</html>
